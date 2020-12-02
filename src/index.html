@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>recruitment task</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Github Search Repository</h1>
+            <form id="form">
+                <div class="main">
+                    <input type="text" id="userName" placeholder="UserName" required>
+                </div>
+                <div class="main">
+                    <button class="btn">
+                        Search User
+                    </button>
+                </div>
+                <p class="repo">Repository ovner: <span id="ovner"></span></p>
+            </form>
+            <table id="table">         
+                    <thead>
+                      <tr class="info-tab">
+                        <th class="row" scope="col">Repository name</th>
+                        <th class="row" scope="col">Language</th>
+                        <th class="row" scope="col">Stars</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    </tbody>
+            </table>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
